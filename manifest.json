@@ -1,0 +1,8 @@
+{
+  "manifest_version": 2,
+  "name": "Easy Email Encrypt",
+  "version": "1.0.0",
+  "background": { "scripts": ["background.js"] },
+  "description": "Encrypts your webmail",
+  "permissions": ["tabs", "https://mail.google.com/"]
+}

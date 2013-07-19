@@ -6,10 +6,10 @@ var tabs = [];
 var updateActionForTab = function(tabId) {
   if (tabs[tabId] == 'plaintext') {
     chrome.pageAction.setTitle({tabId: tabId, title: 'Email will be sent in plain text'});
-    chrome.pageAction.setIcon({tabId: tabId, path: 'plaintext.png'});
+    chrome.pageAction.setIcon({tabId: tabId, path: '/resources/plaintext.png'});
   } else {
     chrome.pageAction.setTitle({tabId: tabId, title: 'Email will be sent encrypted'});
-    chrome.pageAction.setIcon({tabId: tabId, path: 'encrypted.png'});
+    chrome.pageAction.setIcon({tabId: tabId, path: '/resources/encrypted.png'});
   }
   chrome.pageAction.show(tabId);
 };

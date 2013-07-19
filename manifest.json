@@ -2,9 +2,9 @@
   "manifest_version": 2,
   "name": "Easy Email Encrypt",
   "version": "1.0.0",
-  "background": { "scripts": ["background.js"] },
+  "background": { "scripts": ["runonce.js", "background.js"] },
   "description": "Encrypts your webmail",
-  "permissions": ["tabs", "https://mail.google.com/"],
+  "permissions": ["tabs", "storage"],
   "page_action": {},
-  "options_page": "options.html"
+  "options_page": "options/index.html"
 }
